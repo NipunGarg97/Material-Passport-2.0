@@ -1,0 +1,412 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "System_Interaction": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "System_ID": {
+            "type": "string"
+          },
+          "System_Name": {
+            "type": "string"
+          },
+          "Material_Selection": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Material_01": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Name": {},
+                      "Manufacturer": {
+                        "type": "string"
+                      },
+                      "Location_of_Vendor": {
+                        "type": "string"
+                      },
+                      "Distance": {
+                        "type": "string"
+                      },
+                      "Environmental_Impact": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "Toxicity": {
+                              "type": "string"
+                            },
+                            "Carbon_Emissions": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Toxicity",
+                            "Carbon_Emissions"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "Name",
+                      "Manufacturer",
+                      "Location_of_Vendor",
+                      "Distance",
+                      "Environmental_Impact"
+                    ]
+                  }
+                },
+                "Material_02": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Name": {
+                        "type": "string"
+                      },
+                      "Manufacturer": {
+                        "type": "string"
+                      },
+                      "Location_of_Vendor": {
+                        "type": "string"
+                      },
+                      "Distance": {
+                        "type": "string"
+                      },
+                      "Environmental_Impact": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "Toxicity": {
+                              "type": "string"
+                            },
+                            "Carbon_Emissions": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Toxicity",
+                            "Carbon_Emissions"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "Name",
+                      "Manufacturer",
+                      "Location_of_Vendor",
+                      "Distance",
+                      "Environmental_Impact"
+                    ]
+                  }
+                },
+                "Material_03": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Name": {
+                        "type": "string"
+                      },
+                      "Manufacturer": {
+                        "type": "string"
+                      },
+                      "Location_of_Vendor": {
+                        "type": "string"
+                      },
+                      "Distance": {
+                        "type": "string"
+                      },
+                      "Environmental_Impact": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "Toxicity": {
+                              "type": "string"
+                            },
+                            "Carbon_Emissions": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Toxicity",
+                            "Carbon_Emissions"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "Name",
+                      "Manufacturer",
+                      "Location_of_Vendor",
+                      "Distance",
+                      "Environmental_Impact"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "Material_01",
+                "Material_02",
+                "Material_03"
+              ]
+            }
+          },
+          "Material_Compatibility": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Materials_that_can_be_put_together": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Compatible_01": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Compatible_01"
+                    ]
+                  }
+                },
+                "Materials_that_cannot_be_put_together": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Not_Compatible_01": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Not_Compatible_01"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "Materials_that_can_be_put_together",
+                "Materials_that_cannot_be_put_together"
+              ]
+            }
+          },
+          "Material_Correlation": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Connections": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Correlation_ID": {
+                        "type": "string"
+                      },
+                      "Name": {
+                        "type": "string"
+                      },
+                      "Manufacturer": {
+                        "type": "string"
+                      },
+                      "Environmental_Impact": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "Toxicity": {
+                              "type": "string"
+                            },
+                            "Carbon_Emissions": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Toxicity",
+                            "Carbon_Emissions"
+                          ]
+                        }
+                      },
+                      "Connection_between": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Correlation_ID",
+                      "Name",
+                      "Manufacturer",
+                      "Environmental_Impact",
+                      "Connection_between"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "Connections"
+              ]
+            }
+          },
+          "Material_Interaction": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Instance_01": {
+                  "type": "string"
+                },
+                "Compatibility": {
+                  "type": "string"
+                },
+                "Connection": {
+                  "type": "string"
+                },
+                "Environmental_Impact": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Toxicity": {
+                        "type": "string"
+                      },
+                      "Carbon_Emissions": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Toxicity",
+                      "Carbon_Emissions"
+                    ]
+                  }
+                },
+                "Instance_02": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Compatibility",
+                "Connection",
+                "Environmental_Impact"
+              ]
+            }
+          },
+          "Disassembly": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Disassembly_01": {
+                  "type": "string"
+                },
+                "Materials_Obtained": {
+                  "type": "string"
+                },
+                "Time_Taken": {
+                  "type": "string"
+                },
+                "Material_Movement": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Storage_Location": {
+                        "type": "string"
+                      },
+                      "Distance_from_the_centre": {
+                        "type": "string"
+                      },
+                      "Transport": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "Type": {
+                              "type": "string"
+                            },
+                            "Environmental_Impact": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "Carbon_Emissions": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "Carbon_Emissions"
+                                ]
+                              }
+                            }
+                          },
+                          "required": [
+                            "Type",
+                            "Environmental_Impact"
+                          ]
+                        }
+                      },
+                      "Exposure_to_Air": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "Open": {
+                              "type": "string"
+                            },
+                            "Semi-Open": {
+                              "type": "string"
+                            },
+                            "Isolated": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Open",
+                            "Semi-Open",
+                            "Isolated"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "Storage_Location",
+                      "Distance_from_the_centre",
+                      "Transport",
+                      "Exposure_to_Air"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "Disassembly_01",
+                "Materials_Obtained",
+                "Time_Taken",
+                "Material_Movement"
+              ]
+            }
+          }
+        },
+        "required": [
+          "System_ID",
+          "System_Name",
+          "Material_Selection",
+          "Material_Compatibility",
+          "Material_Correlation",
+          "Material_Interaction",
+          "Disassembly"
+        ]
+      }
+    }
+  },
+  "required": [
+    "System_Interaction"
+  ]
+}
