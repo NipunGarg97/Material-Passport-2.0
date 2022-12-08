@@ -1,0 +1,334 @@
+{
+  "System_Interaction": [
+    {
+      "System_ID": "01",
+      "System_Name": "System 01",
+      "Material_Selection": [
+        {
+          "Material_01": [
+            {
+              "Name": "Wood",
+              "Manufacturer": "ABC",
+              "Location_of_Vendor": "ABC Street",
+              "Distance": "X km",
+              "Environmental_Impact": [
+                {
+                  "Toxicity": "No",
+                  "Carbon_Emissions": "x kg CO2/m2"
+                }
+              ]
+            }
+          ],
+          "Material_02": [
+            {
+              "Name": "Steel",
+              "Manufacturer": "ABC",
+              "Location_of_Vendor": "ABC Street",
+              "Distance": "X km",
+              "Environmental_Impact": [
+                {
+                  "Toxicity": "No",
+                  "Carbon_Emissions": "x kg CO2/m2"
+                }
+              ]
+            }
+          ],
+          "Material_03": [
+            {
+              "Name": "Glass",
+              "Manufacturer": "ABC",
+              "Location_of_Vendor": "ABC Street",
+              "Distance": "X km",
+              "Environmental_Impact": [
+                {
+                  "Toxicity": "No",
+                  "Carbon_Emissions": "x kg CO2/m2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Material_Compatibility": [
+        {
+          "Materials_that_can_be_put_together": [
+            {
+              "Compatible_01": "Material_01_and_Material_03"
+            }
+          ],
+          "Materials_that_cannot_be_put_together": [
+            {
+              "Not_Compatible_01": "Material_02_and_Material_03"
+            }
+          ]
+        }
+      ],
+      "Material_Correlation": [
+        {
+          "Connections": [
+            {
+              "Correlation_ID": "01",
+              "Name": "Bolted_Connection",
+              "Manufacturer": "ABC",
+              "Environmental_Impact": [
+                {
+                  "Toxicity": "No",
+                  "Carbon_Emissions": "x kg CO2/m2"
+                }
+              ],
+              "Connection_between": "Material_01_and_Material_02"
+            },
+            {
+              "Correlation_ID": "02",
+              "Name": "Spider_Joint",
+              "Manufacturer": "ABC",
+              "Environmental_Impact": [
+                {
+                  "Toxicity": "No",
+                  "Carbon_Emissions": "x kg CO2/m2"
+                }
+              ],
+              "Connection_between": "Material_01_and_Material_03"
+            }
+          ]
+        }
+      ],
+      "Material_Interaction": [
+        {
+          "Instance_01": "Material_01_and_Material_02",
+          "Compatibility": "Compatible_01",
+          "Connection": "Correlation_01",
+          "Environmental_Impact": [
+            {
+              "Toxicity": "No",
+              "Carbon_Emissions": "x kg CO2/m2"
+            }
+          ]
+        },
+        {
+          "Instance_02": "Material_01_and_Material_03",
+          "Compatibility": "Compatible_02",
+          "Connection": "Correlation_02",
+          "Environmental_Impact": [
+            {
+              "Toxicity": "No",
+              "Carbon_Emissions": "x kg CO2/m2"
+            }
+          ]
+        }
+      ],
+      "Disassembly": [
+        {
+          "Disassembly_01": "Correlation_01",
+          "Materials_Obtained": "Material_01_and_Material_02",
+          "Time_Taken": "X mins",
+          "Material_Movement": [
+            {
+              "Storage_Location": "XYZ street",
+              "Distance_from_the_centre": "X kms",
+              "Transport": [
+                {
+                  "Type": "XYZ",
+                  "Environmental_Impact": [
+                    {
+                      "Carbon_Emissions": "X kg CO2/m2"
+                    }
+                  ]
+                }
+              ],
+              "Exposure_to_Air": [
+                {
+                  "Open": "No",
+                  "Semi-Open": "No",
+                  "Isolated": "Yes"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "System_ID": "02",
+      "System_Name": "System 02",
+      "Material_Selection": [
+        {
+          "Material_01": [
+            {
+              "Name": [
+                {
+                  "Name": "Material_02",
+                  "Belonged_previously_to": "System 01",
+                  "Material_Movement": [
+                    {
+                      "Storage_Location": "XYZ street",
+                      "Distance_from_the_centre": "X kms",
+                      "Transport": [
+                        {
+                          "Type": "XYZ",
+                          "Environmental_Impact": [
+                            {
+                              "Carbon_Emissions": "X kg CO2/m2"
+                            }
+                          ]
+                        }
+                      ],
+                      "Exposure_to_Air": [
+                        {
+                          "Open": "No",
+                          "Semi-Open": "No",
+                          "Isolated": "Yes"
+                        }
+                      ]
+                    }
+                  ],
+                  "Modification": [
+                    {
+                      "Yes/No": "Yes",
+                      "Modification_Description": "xyz"
+                    }
+                  ]
+                }
+              ],
+              "Manufacturer": "ABC",
+              "Location_of_Vendor": "ABC Street",
+              "Distance": "X km",
+              "Environmental_Impact": [
+                {
+                  "Toxicity": "No",
+                  "Carbon_Emissions": "x kg CO2/m2"
+                }
+              ]
+            }
+          ],
+          "Material_02": [
+            {
+              "Name": "Steel",
+              "Manufacturer": "ABC",
+              "Location_of_Vendor": "ABC Street",
+              "Distance": "X km",
+              "Environmental_Impact": [
+                {
+                  "Toxicity": "No",
+                  "Carbon_Emissions": "x kg CO2/m2"
+                }
+              ]
+            }
+          ],
+          "Material_03": [
+            {
+              "Name": "Glass",
+              "Manufacturer": "ABC",
+              "Location_of_Vendor": "ABC Street",
+              "Distance": "X km",
+              "Environmental_Impact": [
+                {
+                  "Toxicity": "No",
+                  "Carbon_Emissions": "x kg CO2/m2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Material_Compatibility": [
+        {
+          "Materials_that_can_be_put_together": [
+            {
+              "Compatible_01": "Material_01_and_Material_03"
+            }
+          ],
+          "Materials_that_cannot_be_put_together": [
+            {
+              "Not_Compatible_01": "Material_02_and_Material_03"
+            }
+          ]
+        }
+      ],
+      "Material_Correlation": [
+        {
+          "Connections": [
+            {
+              "Correlation_ID": "01",
+              "Name": "Bolted_Connection",
+              "Manufacturer": "ABC",
+              "Environmental_Impact": [
+                {
+                  "Toxicity": "No",
+                  "Carbon_Emissions": "x kg CO2/m2"
+                }
+              ],
+              "Connection_between": "Material_01_and_Material_02"
+            },
+            {
+              "Correlation_ID": "02",
+              "Name": "Spider_Joint",
+              "Manufacturer": "ABC",
+              "Environmental_Impact": [
+                {
+                  "Toxicity": "No",
+                  "Carbon_Emissions": "x kg CO2/m2"
+                }
+              ],
+              "Connection_between": "Material_01_and_Material_03"
+            }
+          ]
+        }
+      ],
+      "Material_Interaction": [
+        {
+          "Instance_01": "Material_01_and_Material_02",
+          "Compatibility": "Compatible_01",
+          "Connection": "Correlation_01",
+          "Environmental_Impact": [
+            {
+              "Toxicity": "No",
+              "Carbon_Emissions": "x kg CO2/m2"
+            }
+          ]
+        },
+        {
+          "Instance_02": "Material_01_and_Material_03",
+          "Compatibility": "Compatible_02",
+          "Connection": "Correlation_02",
+          "Environmental_Impact": [
+            {
+              "Toxicity": "No",
+              "Carbon_Emissions": "x kg CO2/m2"
+            }
+          ]
+        }
+      ],
+      "Disassembly": [
+        {
+          "Disassembly_01": "Correlation_01",
+          "Materials_Obtained": "Material_01_and_Material_02",
+          "Time_Taken": "X mins",
+          "Material_Movement": [
+            {
+              "Storage_Location": "XYZ street",
+              "Distance_from_the_centre": "X kms",
+              "Transport": [
+                {
+                  "Type": "XYZ",
+                  "Environmental_Impact": [
+                    {
+                      "Carbon_Emissions": "X kg CO2/m2"
+                    }
+                  ]
+                }
+              ],
+              "Exposure_to_Air": [
+                {
+                  "Open": "No",
+                  "Semi-Open": "No",
+                  "Isolated": "Yes"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
